@@ -16,11 +16,4 @@ jobs:
       with:
           version: '1.0.0'
           projectPath: '${{ github.workspace }}'
-          args: '
-            -noSplash 
-            -retry=0 
-            -testSuitePath='Test Suites/reqres.in Test'
-            -browserType="Chrome (headless)"
-            -apiKey= ''
-            --config -webui.autoUpdateDrivers=true
-            '
+          args: '-noSplash -retry=0 -testSuitePath="Test Suites/reqres.in Test" -browserType="Chrome (headless)" --config -webui.autoUpdateDrivers=true'
